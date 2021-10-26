@@ -7,7 +7,6 @@ class JflintGo < Formula
   homepage "https://github.com/masakichi/jflint-go"
   version "1.0.0"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
