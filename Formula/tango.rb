@@ -7,7 +7,6 @@ class Tango < Formula
   homepage "https://github.com/masakichi/tango"
   version "1.1.0"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
