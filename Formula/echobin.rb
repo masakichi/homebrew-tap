@@ -5,21 +5,21 @@
 class Echobin < Formula
   desc "Yet another Golang port of httpbin, powered by echo framework."
   homepage "https://github.com/masakichi/echobin"
-  version "0.9.0"
+  version "0.9.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/masakichi/echobin/releases/download/0.9.0/echobin_0.9.0_Darwin_arm64.tar.gz"
-      sha256 "d939b3473dc57924666728b88fd6e8dc1829fb4b41314b630b9a401b5c3ff03e"
+      url "https://github.com/masakichi/echobin/releases/download/0.9.1/echobin_0.9.1_Darwin_arm64.tar.gz"
+      sha256 "a025a7acd01fb42d60aa7fd76d02c445451d6acdcbdcbf5a9fd4e6fef66907f4"
 
       def install
         bin.install "echobin"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/masakichi/echobin/releases/download/0.9.0/echobin_0.9.0_Darwin_x86_64.tar.gz"
-      sha256 "bf5005dcb0a9167de8734847dc91512c72f1baf480621a99e66baededda8d7f0"
+      url "https://github.com/masakichi/echobin/releases/download/0.9.1/echobin_0.9.1_Darwin_x86_64.tar.gz"
+      sha256 "b9bbb6cdb27f68adde542ec40203b9dc8722de72029b05051ac2f02c1ce3b6d9"
 
       def install
         bin.install "echobin"
@@ -29,16 +29,16 @@ class Echobin < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/masakichi/echobin/releases/download/0.9.0/echobin_0.9.0_Linux_arm64.tar.gz"
-      sha256 "d9ea40566f0fec7f5811fa3e7a3e45a006c189fe3af5c6109b1035fd1b3354ac"
+      url "https://github.com/masakichi/echobin/releases/download/0.9.1/echobin_0.9.1_Linux_arm64.tar.gz"
+      sha256 "fd3f2eea287169ea5412a602d7daa6cb0ff98378cf687ca0c0f92e0a952b1cc7"
 
       def install
         bin.install "echobin"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/masakichi/echobin/releases/download/0.9.0/echobin_0.9.0_Linux_x86_64.tar.gz"
-      sha256 "a522d4383a6f43eab75369090ee4326babe16f2bae9a95e03ce02a7f4ad45490"
+      url "https://github.com/masakichi/echobin/releases/download/0.9.1/echobin_0.9.1_Linux_x86_64.tar.gz"
+      sha256 "41457bdec6080579dc6bc7337f129cd46afa85cf579a53e4ec9c17debe43aa03"
 
       def install
         bin.install "echobin"
