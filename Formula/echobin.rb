@@ -11,7 +11,7 @@ class Echobin < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/masakichi/echobin/releases/download/0.9.2/echobin_0.9.2_Darwin_arm64.tar.gz"
-      sha256 "f831acf9d72168f743d6a750d08f16c4a981d711ebb3e5894f172abffd11a6a3"
+      sha256 "fe4217043a8e09ee0c8265bc5b1833aabfeddd06d5505babe0eb7f0f1f6be5fb"
 
       def install
         bin.install "echobin"
@@ -19,7 +19,7 @@ class Echobin < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/masakichi/echobin/releases/download/0.9.2/echobin_0.9.2_Darwin_x86_64.tar.gz"
-      sha256 "f4464ebe2a24eee6aad6ffc6ed4687e991696e1fec8256cda9dbddf2a221fbdb"
+      sha256 "2c142da534af61223d9f8fef81ae4508739431b1df1d8c94c6e2cf5aee334664"
 
       def install
         bin.install "echobin"
@@ -30,7 +30,7 @@ class Echobin < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/masakichi/echobin/releases/download/0.9.2/echobin_0.9.2_Linux_arm64.tar.gz"
-      sha256 "673024d3ddded48148dd2c075276832d0defaeedd43e4fd1c5e46ada9aa2b846"
+      sha256 "09c567b3e3c932af6f5720eba3575cabb3a8782bfe2126a1fa6c581b621c4ed6"
 
       def install
         bin.install "echobin"
@@ -38,7 +38,7 @@ class Echobin < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/masakichi/echobin/releases/download/0.9.2/echobin_0.9.2_Linux_x86_64.tar.gz"
-      sha256 "9eeaa31cca8fca821177cf7944e7da8ceb6deb2477fdde486dc54194f2e93f8d"
+      sha256 "5c78a07f88e0406da21f4b395f01e0a3a58026526ade443be10af19a14b822fc"
 
       def install
         bin.install "echobin"
